@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Adrian's"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 08:47:05 AM"/>
+        <attribute name="created" value="QWRyaWFuJ3M7REVTS1RPUC1MTDY2TlFWOzIwMjItMTAtMDU7MDc6NDE6MjcgQU07MzA5NQ=="/>
+        <attribute name="edited" value="QWRyaWFuJ3M7REVTS1RPUC1MTDY2TlFWOzIwMjItMTAtMDU7MDc6NTM6MjIgQU07MTtKb3dvQ29kZXI7TE9DQUwtSEVBUlQ7MjAxOS0xMi0wNDsiMTI6NTk6MzMgIjtNZW5hbXBpbGthbiBCaWxhbmdhbiBGaWJvbmFjY2kuZnByZzs5NTY4"/>
+        <attribute name="edited" value="QWRyaWFuJ3M7REVTS1RPUC1MTDY2TlFWOzIwMjItMTAtMDU7MDg6MTM6NDAgQU07MTtBbHlhIEtoYWlydW5uaXNhJztMQVBUT1AtU0lONjROQ1E7MjAyMi0wOS0yODswNTo1MDozMCBBTTtmaWJvbmFjY2kuZnByZzs4Njcy"/>
+        <attribute name="edited" value="QWRyaWFuJ3M7REVTS1RPUC1MTDY2TlFWOzIwMjItMTAtMDU7MDg6NDc6MDUgQU07MTszMjA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <output expression="fibonacci(a)" newline="True"/>
+        </body>
+    </function>
+    <function name="fibonacci" type="Integer" variable="n">
+        <parameters>
+            <parameter name="c" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="a, b, d, e, x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="c"/>
+            <assign variable="e" expression="0"/>
+            <assign variable="d" expression="1"/>
+            <for variable="b" start="1" end="x" direction="inc" step="1">
+                <assign variable="a" expression="d+e"/>
+                <assign variable="d" expression="e"/>
+                <assign variable="e" expression="a"/>
+                <output expression="e" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

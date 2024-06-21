@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-02 08:06:28 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wMjswNzozOTo0MSBBTTsyNzI3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wMjswODowNjoyOCBBTTsxOzI4MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <input variable="angka"/>
+            <output expression="fibonacci (angka)" newline="True"/>
+        </body>
+    </function>
+    <function name="fibonacci" type="Integer" variable="angka">
+        <parameters>
+            <parameter name="angka" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <if expression="angka=1||angka2">
+                <then>
+                    <assign variable="angka" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="angka" expression="fibonacci(angka-1)+fibonacci(angka-2)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

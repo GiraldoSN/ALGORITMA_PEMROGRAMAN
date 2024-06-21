@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-21 09:16:55 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNjo1MyBQTTsyNzQ0"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNzowMiBQTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDktMDU7MDk6MzY6MjggQU07cGVudWdhc2FuIGtlIDIuZnByZzs3NDY3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yMTswOToxNjo1NSBBTTsxMjsyODk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="faktor, pembagi, angka, i, x" type="Integer" array="False" size=""/>
+            <declare name="cetak" type="Boolean" array="False" size=""/>
+            <assign variable="angka" expression="2"/>
+            <input variable="x"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <assign variable="cetak" expression="false"/>
+                <do expression="cetak = false">
+                    <assign variable="faktor" expression="0"/>
+                    <assign variable="pembagi" expression="1"/>
+                    <do expression="pembagi &lt;= angka">
+                        <if expression="angka mod pembagi = 0">
+                            <then>
+                                <assign variable="faktor" expression="faktor+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="pembagi" expression="pembagi + 1"/>
+                    </do>
+                    <if expression="faktor = 2">
+                        <then>
+                            <output expression="angka" newline="True"/>
+                            <assign variable="cetak" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="angka" expression="angka + 1"/>
+                </do>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

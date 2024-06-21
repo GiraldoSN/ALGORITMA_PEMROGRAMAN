@@ -1,0 +1,31 @@
+print("membuat alat penghtung diskon")
+print("masukkan total belanja anda")
+jumlah =int(input("Rp. "))
+if (jumlah >= 50000) and (jumlah < 100000):
+    A = jumlah*10/100
+    print("kamu mendapatkan diskon sebesar 10% =",int(A))
+elif(jumlah>=100000) and (jumlah<=200000):
+    A = jumlah*15/100
+    print("kamu mendapatkan diskon sebesar 15% =",int(A))
+elif jumlah>=200000:
+    A = jumlah*25/100
+    print("kamu mendapatkan diskon sebesar 25% =",int(A))
+else:
+    A = jumlah * 0
+    print("kamu tidak mendapatkan diskon" ,int(A))
+B = jumlah-A
+print("jumlah yangharus dibayar  Rp:",int(B))
+
+
+print("masukkan nilai dolar yang akan dikonversikan ke dalam rupiah")
+dolar = 15100
+rupiah = int(input())
+rupiah = dolar * rupiah
+print ("Rp:",int(rupiah))
+
+
+print("masukan nilai rupaih yang akan di konversikan kedalam dolar")
+rupiah =15100
+dolar = int(input())
+dolar = dolar / rupiah 
+print(dolar)

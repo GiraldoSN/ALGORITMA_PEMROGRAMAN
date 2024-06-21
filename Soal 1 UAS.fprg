@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-30 08:44:14 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0zMDswNzoyODo0MyBBTTsyNzI4"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0zMDswODo0NDoxNCBBTTsxOzI4MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c" type="Integer" array="True" size="10"/>
+            <declare name="x, d, v" type="Integer" array="False" size=""/>
+            <for variable="v" start="1" end="10" direction="inc" step="1">
+                <input variable="c[x-1]"/>
+            </for>
+            <for variable="v" start="1" end="9" direction="inc" step="1">
+                <for variable="x" start="1" end="9" direction="inc" step="1">
+                    <if expression="c[b-1]&lt;c[x]">
+                        <then>
+                            <assign variable="d" expression="c[x-1]"/>
+                            <assign variable="c[x-1]" expression="c[x]"/>
+                            <assign variable="c[x]" expression="d"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="x" start="1" end="3" direction="inc" step="1">
+                <output expression="c[x-1]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-27 11:42:02 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yNzsxMTozMzo1MiBQTTsyNzQ3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yNzsxMTo0MjowMiBQTTsyOzI4NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, loop" type="Integer" array="False" size=""/>
+            <assign variable="angka" expression="1"/>
+            <for variable="loop" start="0" end="9" direction="inc" step="1">
+                <assign variable="angka" expression="angka*3"/>
+            </for>
+            <output expression="&quot;Suku ke-10 adalah&quot;" newline="True"/>
+            <output expression="angka" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

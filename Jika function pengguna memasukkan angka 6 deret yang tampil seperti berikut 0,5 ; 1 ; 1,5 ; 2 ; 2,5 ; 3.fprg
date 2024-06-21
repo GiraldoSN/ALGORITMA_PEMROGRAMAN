@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-26 08:21:27 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0yNjswODowMzo0MyBQTTsyNzQx"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0yNjswODoyMToyNyBQTTsxOzI4NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p, l" type="Integer" array="False" size=""/>
+            <input variable="p"/>
+            <for variable="l" start="1" end="p" direction="inc" step="1">
+                <output expression="prog1(l)" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="prog1" type="Real" variable="x">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y, i, h" type="Real" array="False" size=""/>
+            <assign variable="x" expression="0"/>
+            <assign variable="y" expression="0.5"/>
+            <for variable="i" start="0" end="a" direction="inc" step="1">
+                <assign variable="h" expression="x + y"/>
+                <assign variable="x" expression="h"/>
+                <assign variable="h" expression="y"/>
+                <assign variable="x" expression="x"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

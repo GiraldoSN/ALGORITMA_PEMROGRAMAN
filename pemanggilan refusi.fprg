@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-09 09:30:58 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wOTswNzozMDowMyBBTTsyNzIz"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wOTswODowMDoyMCBBTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMTEtMDk7MDc6MzA6MDMgQU07UmVrdXJzaWYgcGVtYW5nZ2lsYW4uZnByZzs4MTc2"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wOTswOTozMDo1OCBBTTsxOzI4NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Masukkan angka yang ingin anda masukkan&quot;" newline="True"/>
+            <declare name="i, a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <output expression="iya (a)" newline="True"/>
+        </body>
+    </function>
+    <function name="iya" type="String" variable="b">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="b" type="String" array="False" size=""/>
+            <declare name="c" type="String" array="True" size="10"/>
+            <assign variable="c[0]" expression="&quot;&gt;satu&lt;&quot;"/>
+            <assign variable="c[1]" expression="&quot;&gt;dua&lt;&quot;"/>
+            <assign variable="c[2]" expression="&quot;&gt;tiga&lt;&quot;"/>
+            <assign variable="c[3]" expression="&quot;&gt;empat&lt;&quot;"/>
+            <assign variable="c[4]" expression="&quot;&gt;lima&lt;&quot;"/>
+            <assign variable="c[5]" expression="&quot;&gt;enam&lt;&quot;"/>
+            <assign variable="c[6]" expression="&quot;&gt;tujuh&lt;&quot;"/>
+            <assign variable="c[7]" expression="&quot;&gt;delapan&lt;&quot;"/>
+            <assign variable="c[8]" expression="&quot;&gt;sembilan&lt;&quot;"/>
+            <assign variable="c[9]" expression="&quot;&gt;sepuluh&lt;&quot;"/>
+            <if expression="a&lt;10">
+                <then>
+                    <assign variable="b" expression="c[a]"/>
+                </then>
+                <else>
+                    <if expression="a&lt;20">
+                        <then>
+                            <if expression="">
+                                <then/>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

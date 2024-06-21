@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-23 07:18:38 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0xNjswNzo0NjoyNCBBTTsyNzMx"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0xNjswODoxNzoxOCBBTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMTEtMTY7MDc6NDY6MjMgQU07NTYzMA=="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0yMzswNzoxODozOCBBTTs3OzI4NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, D, temp, E, K" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="D"/>
+            <for variable="K" start="1" end="3" direction="inc" step="1">
+                <for variable="E" start="1" end="3" direction="inc" step="1">
+                    <if expression="A&gt;B">
+                        <then>
+                            <assign variable="temp" expression="A"/>
+                            <assign variable="A" expression="B"/>
+                            <assign variable="B" expression="temp"/>
+                        </then>
+                        <else>
+                            <if expression="B&gt;C">
+                                <then>
+                                    <assign variable="temp" expression="B"/>
+                                    <assign variable="B" expression="C"/>
+                                    <assign variable="C" expression="temp"/>
+                                </then>
+                                <else>
+                                    <if expression="C&gt;D">
+                                        <then>
+                                            <assign variable="temp" expression="C"/>
+                                            <assign variable="C" expression="D"/>
+                                            <assign variable="D" expression="temp"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </for>
+            </for>
+            <output expression="A&amp;B&amp;C&amp;D" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

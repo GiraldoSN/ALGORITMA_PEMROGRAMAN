@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-10 12:36:09 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNTozOCBQTTsyNzQ2"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNTo0MSBQTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDktMDU7MDk6MzY6MjggQU07cGVudWdhc2FuIGtlIDIuZnByZzs3NDY4"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNjowOSBQTTsxOzI4NTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu" type="String" array="False" size=""/>
+            <input variable=""/>
+            <assign variable="n" expression="0"/>
+            <do expression="menu &gt; 3">
+                <output expression="&quot;0-3&quot;" newline="True"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

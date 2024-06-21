@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-26 04:17:40 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOC0yNjswNDowODo0MSBQTTsyNzQ3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOC0yNjswNDoxNzo0MCBQTTsxOzI4NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai, sisa" type="Integer" array="False" size=""/>
+            <input variable="nilai"/>
+            <assign variable="sisa" expression="nilai mod 2"/>
+            <if expression="sisa = 0">
+                <then>
+                    <output expression="&quot;GENAP&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;GANJIL&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

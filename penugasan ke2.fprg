@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-10 12:46:51 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozOTo1MyBQTTsyNzQ3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozOTo1NiBQTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDktMDU7MDk6MzY6MjggQU07cGVudWdhc2FuIGtlIDIuZnByZzs3NDc4"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjo0Njo1MSBQTTsxOzI4NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu" type="Integer" array="False" size=""/>
+            <assign variable="menu" expression="0"/>
+            <declare name="status" type="String" array="False" size=""/>
+            <assign variable="status" expression="&quot;tidak&quot;"/>
+            <output expression="&quot;HAI SLAMAT DATANG DI CALCULATOR CERDAS GIRALDO&quot;" newline="True"/>
+            <output expression="&quot;KETIK 1 JIKA DETEKSI BIL GANJIL GENAP&quot;" newline="True"/>
+            <output expression="&quot;KETIK 2 JIKA DETEKSI BIL PRIMA&quot;" newline="True"/>
+            <output expression="&quot;KETIK 3 JIKA DETEKSI FAKTORIAL&quot;" newline="True"/>
+            <output expression="&quot;KETIK 4 JIKA DETEKSI LUAS SEGITIGA SAMA SISI&quot;" newline="True"/>
+            <output expression="&quot;SILAHKAN MASUKAN ANGKA SEMBARANG UNTUK MELANJUTKAN&quot;" newline="True"/>
+            <output expression="&quot;KETIK 5 JIKA EXIT&quot;" newline="True"/>
+            <do expression="menu!=5&amp;&amp; status!=&quot;tidak&quot;">
+                <input variable="menu"/>
+                <if expression="menu = 1">
+                    <then>
+                        <declare name="nilai, sisa" type="Integer" array="False" size=""/>
+                        <input variable="nilai"/>
+                        <assign variable="sisa" expression="sisa mod 2"/>
+                        <if expression="sisa = 0">
+                            <then>
+                                <output expression="&quot;GENAP&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;GANJIL&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="menu = 2">
+                            <then>
+                                <assign variable="menu" expression="2"/>
+                                <output expression="&quot;DETEKSI BILANGAN PRIMA&quot;" newline="True"/>
+                                <declare name="angka, i, sisa" type="Integer" array="False" size=""/>
+                                <assign variable="sisa" expression="0"/>
+                                <input variable="angka"/>
+                                <for variable="i" start="1" end="angka" direction="inc" step="1">
+                                    <if expression="angka % i = 0">
+                                        <then>
+                                            <assign variable="sisa" expression="sisa + 1"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                    <if expression="sisa = 2">
+                                        <then>
+                                            <output expression="&quot;BILANGAN PRIMA&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;BUKAN BILANGAN PRIMA&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </for>
+                            </then>
+                            <else>
+                                <if expression="menu = 3">
+                                    <then>
+                                        <assign variable="menu" expression="3"/>
+                                        <output expression="&quot;DETEKSI FAKTORIAL&quot;" newline="True"/>
+                                        <declare name="faktorial, n" type="Integer" array="False" size=""/>
+                                        <input variable="angka"/>
+                                        <assign variable="n" expression="faktorial"/>
+                                        <if expression="angka = 0 || angka = 1">
+                                            <then>
+                                                <assign variable="faktorial" expression="1"/>
+                                            </then>
+                                            <else>
+                                                <do expression="n&gt;1">
+                                                    <assign variable="n" expression="n-1"/>
+                                                    <assign variable="faktorial" expression="faktorial*n"/>
+                                                </do>
+                                            </else>
+                                        </if>
+                                        <output expression="faktorial" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="menu = 4">
+                                            <then>
+                                                <assign variable="menu" expression="4"/>
+                                                <output expression="&quot;DETEKSI LUAS SEGITIGA SAMA SISI&quot;" newline="True"/>
+                                                <declare name="angka" type="Integer" array="False" size=""/>
+                                                <input variable="angka"/>
+                                                <assign variable="angka" expression="angka*angka*Sqrt(3)*3/4"/>
+                                                <output expression="&quot;Hasilnya adalah =&quot;&amp;angka" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="menu=5">
+                    <then/>
+                    <else>
+                        <output expression="&quot;KETIK ANGKA LAGI&quot;" newline="True"/>
+                        <input variable="status"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;EXIT&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

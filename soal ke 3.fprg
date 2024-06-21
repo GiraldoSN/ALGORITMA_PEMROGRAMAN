@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-30 09:20:36 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0zMDswODoxMTozNyBBTTsyNzI0"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0zMDswOToyMDozNiBBTTsxOzI4MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, i" type="Integer" array="False" size=""/>
+            <declare name="f" type="String" array="False" size=""/>
+            <declare name="e" type="Boolean" array="False" size=""/>
+            <input variable="a"/>
+            <assign variable="b" expression="2"/>
+            <for variable="i" start="1" end="a" direction="inc" step="1">
+                <assign variable="e" expression="false"/>
+                <do expression="e=false">
+                    <do expression="c&lt;=b">
+                        <assign variable="c" expression="1"/>
+                        <assign variable="d" expression="0"/>
+                        <if expression="b mod c==0">
+                            <then>
+                                <assign variable="d" expression="d+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="c" expression="c+1"/>
+                    </do>
+                    <if expression="d==2">
+                        <then>
+                            <assign variable="e" expression="true"/>
+                        </then>
+                        <else>
+                            <assign variable="e" expression="false"/>
+                        </else>
+                    </if>
+                    <assign variable="b" expression="b+1"/>
+                </do>
+            </for>
+            <output expression="b-1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 08:19:36 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOC0yNDswNDozNDo0NCBQTTsyNzQ3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODoxOTozNiBQTTs3OzI4NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <output expression="faktorial (n)" newline="True"/>
+        </body>
+    </function>
+    <function name="faktorial" type="Integer" variable="faktorial">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="faktorial, o" type="Integer" array="False" size=""/>
+            <assign variable="faktorial" expression="n"/>
+            <assign variable="faktorial" expression="1"/>
+            <if expression="n == 0 || n == 1">
+                <then>
+                    <assign variable="faktorial" expression="1"/>
+                </then>
+                <else>
+                    <for variable="o" start="1" end="n" direction="inc" step="1">
+                        <assign variable="faktorial" expression="faktorial*o"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

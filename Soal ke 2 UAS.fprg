@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-30 08:43:51 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0zMDswODoxMTozNyBBTTsyNzI0"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0zMDswODo0Mzo1MSBBTTsxOzI4MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, e, f" type="Integer" array="False" size=""/>
+            <input variable="f"/>
+            <assign variable="c" expression="7+f"/>
+            <declare name="b" type="Integer" array="True" size="c+1"/>
+            <assign variable="a" expression="4"/>
+            <assign variable="b[0]" expression="a"/>
+            <for variable="d" start="a" end="c" direction="inc" step="1">
+                <assign variable="b[d]" expression="b[d-1]+d"/>
+            </for>
+            <for variable="e" start="1" end="7" direction="inc" step="1">
+                <output expression="b[e]" newline="True"/>
+            </for>
+            <output expression="&quot;deret ke &quot;&amp;f&amp;&quot;adalah&quot;&amp;b[c]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

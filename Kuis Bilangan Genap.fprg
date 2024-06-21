@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-21 08:28:07 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNjo1MyBQTTsyNzQ0"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozNzowMiBQTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDktMDU7MDk6MzY6MjggQU07cGVudWdhc2FuIGtlIDIuZnByZzs3NDY3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yMTswODoyODowNyBBTTsxMTsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, i, n" type="Integer" array="False" size=""/>
+            <input variable="angka"/>
+            <for variable="i" start="1" end="angka" direction="inc" step="1">
+                <assign variable="n" expression="i*2"/>
+                <output expression="n" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

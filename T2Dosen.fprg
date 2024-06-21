@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 09:25:46 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozMTo1NyBQTTsyNzQz"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xMDsxMjozMzozMiBQTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDktMDU7MDk6MzY6MjggQU07cGVudWdhc2FuIGtlIDIuZnByZzs3NDY2"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xNDswOToyNTo0NiBBTTsyOzI4NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu" type="Integer" array="False" size=""/>
+            <do expression="menu &lt; &quot;3&quot;">
+                <output expression="&quot;1. Faktorial&quot;" newline="True"/>
+                <output expression="&quot;2. Ganjil Genap&quot;" newline="True"/>
+                <output expression="&quot;3. Prima&quot;" newline="True"/>
+                <output expression="&quot;4. Luas Segitiga Sama Sisi&quot;" newline="True"/>
+                <output expression="&quot;Exit&quot;" newline="True"/>
+                <input variable="Menu"/>
+                <if expression="menu = &quot;1&quot;">
+                    <then>
+                        <call expression="faktorial"/>
+                    </then>
+                    <else>
+                        <if expression="menu = &quot;2&quot;">
+                            <then>
+                                <call expression="ganjilgenap"/>
+                            </then>
+                            <else>
+                                <if expression="menu = &quot;3&quot;">
+                                    <then>
+                                        <call expression="prima"/>
+                                    </then>
+                                    <else>
+                                        <if expression="menu = &quot;4&quot;">
+                                            <then>
+                                                <call expression="luassegitigasamasisi"/>
+                                            </then>
+                                            <else>
+                                                <if expression="menu = &quot;5&quot;">
+                                                    <then>
+                                                        <call expression="exit"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;harap coba lagi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

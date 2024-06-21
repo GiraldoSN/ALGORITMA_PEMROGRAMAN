@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-12 08:06:37 AM"/>
+        <attribute name="created" value="VVNFUjtTQU1TLUhEOzIwMjItMDktMjE7MDM6NTM6MTQgUE07MjA5MA=="/>
+        <attribute name="edited" value="VVNFUjtTQU1TLUhEOzIwMjItMTAtMTI7MDg6MDY6MzcgQU07NTsyMTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;sekarang kita membuat deret fibonacci&quot;" newline="True"/>
+            <declare name="angka, i" type="Integer" array="False" size=""/>
+            <input variable="angka"/>
+            <for variable="i" start="1" end="angka" direction="inc" step="1">
+                <output expression="fibonacci(i)" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="fibonacci" type="Integer" variable="num1">
+        <parameters>
+            <parameter name="angka" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="num1, num2, num3, counter, x" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="0"/>
+            <assign variable="num2" expression="1"/>
+            <assign variable="counter" expression="0"/>
+            <while expression="counter &lt; angka">
+                <if expression="num1 == 0">
+                    <then/>
+                    <else>
+                        <assign variable="num1" expression="num1"/>
+                    </else>
+                </if>
+                <assign variable="num3" expression="num2+num1"/>
+                <assign variable="num1" expression="num2"/>
+                <assign variable="num2" expression="num3"/>
+                <assign variable="counter" expression="counter + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

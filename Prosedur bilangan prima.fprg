@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-28 07:43:13 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOC0yNTsxMDoxNToyNSBQTTsyNzQz"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yODswNzo0MzoxMyBBTTsyOzI4NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, i, jumlah" type="Integer" array="False" size=""/>
+            <assign variable="jumlah" expression="0"/>
+            <input variable="angka"/>
+            <for variable="i" start="1" end="angka" direction="inc" step="1">
+                <if expression="angka % i = 0">
+                    <then>
+                        <assign variable="jumlah" expression="jumlah + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="jumlah = 2">
+                <then>
+                    <output expression="angka&amp;&quot; adalah bilangan prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="angka&amp;&quot; adalah bukan bilangan prima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

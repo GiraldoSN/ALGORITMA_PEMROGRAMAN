@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-16 07:45:16 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wOTswNzozMDowMyBBTTsyNzIz"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0xNjswNzo0NToxNiBBTTszOzI4NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan angka yang ingin anda masukkan&quot;" newline="True"/>
+            <input variable="angka"/>
+            <output expression="panggilan(angka)" newline="True"/>
+        </body>
+    </function>
+    <function name="panggilan" type="String" variable="huruf">
+        <parameters>
+            <parameter name="E" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="huruf" type="String" array="False" size=""/>
+            <if expression="E==1">
+                <then>
+                    <assign variable="huruf" expression="&quot;Dona&quot;"/>
+                </then>
+                <else>
+                    <assign variable="huruf" expression="&quot;huruf&quot; &amp; pangggilan(E-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

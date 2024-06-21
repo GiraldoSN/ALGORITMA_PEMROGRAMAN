@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-02 08:56:02 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wMjswNzozOTo0MSBBTTsyNzI3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMS0wMjswODo1NjowMiBBTTsyOzI4MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="y, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan angka yang anda inginkan&quot;" newline="True"/>
+            <input variable="y"/>
+            <for variable="x" start="1" end="y" direction="inc" step="1">
+                <output expression="desimal (x)" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="desimal" type="Real" variable="x">
+        <parameters>
+            <parameter name="x" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <if expression="x=1">
+                <then>
+                    <assign variable="x" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="x" expression="desimal(x-1)/2"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

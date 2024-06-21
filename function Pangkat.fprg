@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 08:29:16 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODoyNjoxMCBQTTsyNzM3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODoyODoxOSBQTTsyO0FseWEgS2hhaXJ1bm5pc2EnO0xBUFRPUC1TSU42NE5DUTsyMDIyLTEwLTA1OzA3OjMzOjEwIEFNO3F1aXogcGFuZ2thdC5mcHJnOzg2MjQ="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODoyOToxNiBQTTsxOzI4NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="pangkat(a,b)" newline="True"/>
+        </body>
+    </function>
+    <function name="Pangkat" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c, i, d" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="a"/>
+            <assign variable="b" expression="b-1"/>
+            <for variable="i" start="1" end="b" direction="inc" step="1">
+                <assign variable="a" expression="a*d"/>
+            </for>
+            <assign variable="c" expression="a"/>
+        </body>
+    </function>
+</flowgorithm>

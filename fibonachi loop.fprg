@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-28 12:27:36 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yNzsxMTozMzo1MiBQTTsyNzQ3"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yODsxMjoyNzozNiBBTTsxOzI4NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, loop, total" type="Integer" array="False" size=""/>
+            <assign variable="angka" expression="2"/>
+            <for variable="loop" start="0" end="9" direction="inc" step="1">
+                <assign variable="angka" expression="angka*loop"/>
+                <output expression="angka" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-05 03:17:58 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0wNTswMzoxNTozMyBQTTsyNzQz"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0wNTswMzoxNzo1OCBQTTsxOzI4NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="luas, sisi" type="Integer" array="False" size=""/>
+            <input variable="sisi"/>
+            <assign variable="luas" expression="1/2 * sisi*sisi*sqrt(3)"/>
+            <output expression="luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

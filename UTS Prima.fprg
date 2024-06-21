@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-19 08:51:25 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0xMjswODoyOToxNyBBTTsyNzMw"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0xMjswODozMDo0OSBBTTsyO1VTRVI7U0FNUy1IRDsyMDIyLTA5LTIxOzA4OjM4OjU3IEFNO2RlcmV0IHByaW1hIChmaXgpLmZwcmc7NzA2Mg=="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0xMjswODozNjo0MSBBTTsxO0FseWEgS2hhaXJ1bm5pc2EnO0xBUFRPUC1TSU42NE5DUTsyMDIyLTA5LTIxOzA3OjIwOjU1IEFNO3F1aXogMi5mcHJnOzc5MTk="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0xOTswODo1MToyNSBBTTsxOTsyODk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, l" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <for variable="l" start="1" end="a" direction="inc" step="1">
+                <output expression="prima(l)" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="prima" type="Integer" variable="d">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="o, s, l, d, p" type="Integer" array="False" size=""/>
+            <declare name="i" type="Boolean" array="False" size=""/>
+            <assign variable="o" expression="2"/>
+            <for variable="l" start="1" end="a" direction="inc" step="1">
+                <do expression="i = false">
+                    <assign variable="p" expression="1"/>
+                    <assign variable="s" expression="0"/>
+                    <do expression="p &lt;= o">
+                        <if expression="o mod p = 0">
+                            <then>
+                                <assign variable="s" expression="s + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="p" expression="p + 1"/>
+                    </do>
+                    <if expression="s = 2">
+                        <then>
+                            <assign variable="d" expression="o"/>
+                            <assign variable="i" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="o" expression="o + 1"/>
+                </do>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

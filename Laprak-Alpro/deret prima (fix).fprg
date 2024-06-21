@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-12 08:04:08 AM"/>
+        <attribute name="created" value="VVNFUjtTQU1TLUhEOzIwMjItMDktMjE7MDg6Mzg6NTcgQU07MjA5MA=="/>
+        <attribute name="edited" value="VVNFUjtTQU1TLUhEOzIwMjItMTAtMTI7MDg6MDQ6MDggQU07NzsyMTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <output expression="prima(i)" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="prima" type="Integer" variable="z">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="angka, faktor, pembagi, i, z" type="Integer" array="False" size=""/>
+            <declare name="n" type="String" array="False" size=""/>
+            <assign variable="n" expression="&quot;&quot;"/>
+            <declare name="cetak" type="Boolean" array="False" size=""/>
+            <assign variable="angka" expression="2"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <assign variable="cetak" expression="false"/>
+                <do expression="cetak = false">
+                    <assign variable="pembagi" expression="1"/>
+                    <assign variable="faktor" expression="0"/>
+                    <do expression="pembagi &lt;= angka">
+                        <if expression="angka mod pembagi = 0">
+                            <then>
+                                <assign variable="faktor" expression="faktor + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="pembagi" expression="pembagi + 1"/>
+                    </do>
+                    <if expression="faktor = 2">
+                        <then>
+                            <assign variable="z" expression="angka"/>
+                            <assign variable="cetak" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="angka" expression="angka + 1"/>
+                </do>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

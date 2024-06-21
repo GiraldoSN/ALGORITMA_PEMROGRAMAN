@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 08:57:43 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswNzoxNDowMiBBTTsyNzE5"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODo1Nzo0MyBQTTsxMzsyOTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, l, d, o, s" type="Integer" array="False" size=""/>
+            <declare name="cetak" type="Boolean" array="False" size=""/>
+            <assign variable="s" expression="2"/>
+            <input variable="d"/>
+            <for variable="o" start="1" end="d" direction="inc" step="1">
+                <assign variable="cetak" expression="false"/>
+                <do expression="cetak=false">
+                    <assign variable="a" expression="0"/>
+                    <assign variable="l" expression="1"/>
+                    <do expression="l &lt;= s">
+                        <if expression="s mod l = 0">
+                            <then>
+                                <assign variable="a" expression="a+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="l" expression="l+1"/>
+                    </do>
+                    <if expression="a = 2">
+                        <then>
+                            <output expression="s" newline="True"/>
+                            <assign variable="cetak" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="s" expression="s+1"/>
+                </do>
+            </for>
+        </body>
+    </function>
+    <function name="faktorial" type="Integer" variable="faktor, pembagi, n, i, angka">
+        <parameters/>
+        <body>
+            <declare name="a, l, d, o, s" type="Integer" array="False" size=""/>
+            <declare name="cetak" type="Boolean" array="False" size=""/>
+            <assign variable="s" expression="2"/>
+            <output expression="&quot;Masukkan angka&quot;" newline="True"/>
+            <input variable="d"/>
+            <for variable="o" start="1" end="d" direction="inc" step="1">
+                <assign variable="cetak" expression="false"/>
+                <output expression="&quot;Faktorial n adalah&quot;" newline="True"/>
+                <do expression="cetak=false">
+                    <assign variable="a" expression="0"/>
+                    <assign variable="l" expression="1"/>
+                    <do expression="l &lt;= s">
+                        <if expression="s mod l = 0">
+                            <then>
+                                <assign variable="a" expression="a+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="l" expression="l+1"/>
+                    </do>
+                    <if expression="a = 2">
+                        <then>
+                            <output expression="s" newline="True"/>
+                            <assign variable="cetak" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="s" expression="s+1"/>
+                </do>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

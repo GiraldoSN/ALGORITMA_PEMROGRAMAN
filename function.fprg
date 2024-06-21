@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 08:20:53 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xNDswODowNzoxNSBBTTsyNzM0"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0xNDswODoyMDo1MyBBTTsxOzI4Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="pembagian (a,b)" newline="True"/>
+        </body>
+    </function>
+    <function name="pembagian" type="Integer" variable="c">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+        </body>
+    </function>
+</flowgorithm>

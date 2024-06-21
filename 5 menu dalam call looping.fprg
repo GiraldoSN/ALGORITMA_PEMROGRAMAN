@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 08:57:46 AM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtVlZHRFMxTko7MjAyMi0wOS0wNzswNzo0Mzo0OSBBTTsyNjY1"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtVlZHRFMxTko7MjAyMi0wOS0wNzswOTowNzozNyBBTTszO0FDRVI7TEFQVE9QLVZWR0RTMU5KOzIwMjItMDgtMjQ7MDg6MDU6MDYgUE07QWxnb3JpdG1hIEZha3RvcmlhbC5mcHJnOzc5MjQ="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtVlZHRFMxTko7MjAyMi0wOS0xNDswODo1Nzo0NiBBTTs3OzI3ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu, lagi, tidak" type="String" array="False" size=""/>
+            <do expression="lagi = &quot;iya&quot;">
+                <output expression="&quot;1. faktorial&quot;" newline="True"/>
+                <output expression="&quot;2. ganjilgenap&quot;" newline="True"/>
+                <output expression="&quot;3. prima&quot;" newline="True"/>
+                <output expression="&quot;4. luassegitigasamasisi&quot;" newline="True"/>
+                <output expression="&quot;5. exit&quot;" newline="True"/>
+                <input variable="menu"/>
+                <if expression="menu = &quot;1&quot;">
+                    <then>
+                        <call expression="faktorial"/>
+                    </then>
+                    <else>
+                        <if expression="menu = &quot;2&quot;">
+                            <then>
+                                <call expression="ganjilgenap"/>
+                            </then>
+                            <else>
+                                <if expression="menu = &quot;3&quot;">
+                                    <then>
+                                        <call expression="prima"/>
+                                    </then>
+                                    <else>
+                                        <if expression="menu = &quot;4&quot;">
+                                            <then>
+                                                <call expression="luassegitigasamasisi"/>
+                                            </then>
+                                            <else>
+                                                <if expression="menu = &quot;5&quot;">
+                                                    <then>
+                                                        <call expression="exit"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;hei disana? apakah kamu ingin mengulangi lagi?&quot;" newline="True"/>
+                <input variable="lagi"/>
+                <input variable="tidak"/>
+            </do>
+            <output expression="tidak" newline="True"/>
+        </body>
+    </function>
+    <function name="exit" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;yahahaha udah ndak ada program&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="faktorial" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, faktorial" type="Integer" array="False" size=""/>
+            <declare name="lagi" type="String" array="False" size=""/>
+            <do expression="lagi = &quot;iya&quot;">
+                <assign variable="faktorial" expression="1"/>
+                <input variable="n"/>
+                <if expression="n == 0 or n ==1">
+                    <then>
+                        <assign variable="faktorial" expression="1"/>
+                    </then>
+                    <else>
+                        <for variable="i" start="1" end="n" direction="inc" step="1">
+                            <assign variable="faktorial" expression="faktorial*i"/>
+                        </for>
+                    </else>
+                </if>
+                <output expression="faktorial" newline="True"/>
+                <output expression="&quot;hei gimana? butuh diulangi lagi?&quot;" newline="True"/>
+                <input variable="lagi"/>
+            </do>
+        </body>
+    </function>
+    <function name="ganjilgenap" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="lagi" type="String" array="False" size=""/>
+            <do expression="lagi = &quot;iya&quot;">
+                <input variable="n"/>
+                <if expression="n mod 2==0">
+                    <then>
+                        <output expression="n&amp;&quot;selamat ini adalah bilangan genap&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="n&amp;&quot;selamat ini adalah bilangan ganjil&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;hei disana? apakah kamu ingin mengulangi lagi?&quot;" newline="True"/>
+                <input variable="lagi"/>
+            </do>
+        </body>
+    </function>
+    <function name="luassegitigasamasisi" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alas, tinggi, lagi, luas" type="Integer" array="False" size=""/>
+            <do expression="lagi = &quot;iya&quot;">
+                <input variable="alas"/>
+                <input variable="tinggi"/>
+                <assign variable="luas" expression="1/2*(alas*tinggi)"/>
+                <output expression="luas&amp;&quot;horee selamat ini adalah luas segitiga sama sisi&quot;" newline="True"/>
+            </do>
+        </body>
+    </function>
+    <function name="prima" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan, x, y" type="Integer" array="False" size=""/>
+            <input variable="bilangan"/>
+            <assign variable="x" expression="&quot;bilangan mod% 1&quot;"/>
+            <assign variable="y" expression="&quot;bilangan mod% bilangan&quot;"/>
+            <if expression="x=0 and y=0">
+                <then>
+                    <output expression="bilangan&amp;&quot;yahh ini bukan bilangan prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="bilangan&amp;&quot;selamat ini merupakan bilangan prima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

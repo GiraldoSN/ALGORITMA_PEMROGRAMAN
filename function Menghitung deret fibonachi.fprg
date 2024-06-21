@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-05 08:54:48 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswNzoxNDowMiBBTTsyNzE5"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODo0MTowNCBBTTsxO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDktMjc7MTA6NDM6MjMgUE07Zmlib25hY2hpIGF3YWwuZnByZzs3NTU0"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0xMC0wNTswODo1NDo0OCBBTTsxOzI4NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka1, loop, total, angka2, input" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan inputan angka&quot;" newline="True"/>
+            <input variable="Input"/>
+            <assign variable="angka1" expression="1"/>
+            <assign variable="angka2" expression="0"/>
+            <for variable="loop" start="0" end="input - 1" direction="inc" step="1">
+                <assign variable="total" expression="angka1 + angka2"/>
+                <assign variable="angka1" expression="angka2"/>
+                <assign variable="angka2" expression="total"/>
+                <output expression="total" newline="True"/>
+                <output expression="&quot;Hasilnya adalah&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="Fibonachi" type="Integer" variable="loop,angka1, angka2, input, total">
+        <parameters>
+            <parameter name="input" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="loop, angka1, angka2, input, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan angka&quot;" newline="True"/>
+            <assign variable="angka1" expression="1"/>
+            <assign variable="angka2" expression="0"/>
+            <for variable="loop" start="0" end="input - 1" direction="inc" step="1">
+                <assign variable="total" expression="angka1 + angka2"/>
+                <assign variable="angka1" expression="angka2"/>
+                <assign variable="angka2" expression="total"/>
+                <output expression="total" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

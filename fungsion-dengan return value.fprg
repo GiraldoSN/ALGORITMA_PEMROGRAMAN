@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-28 08:33:07 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yODswNzo0MTozNSBBTTsyNzM4"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yODswODoyMToyOCBBTTsyO1VzZXI7TEFQVE9QLUs0RTNVUkc3OzIwMjItMDgtMjU7MTA6MTU6MjUgUE07QWxvZ2FyaXRtYSBiaWxhbmdhbiBwcmltYS5mcHJnOzg2NDA="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtSzRFM1VSRzc7MjAyMi0wOS0yODswODozMzowNyBBTTsxOzI4NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <output expression="prima(x)" newline="True"/>
+        </body>
+    </function>
+    <function name="prima" type="String" variable="d">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="angka, i, jumlah" type="Integer" array="False" size=""/>
+            <declare name="d" type="String" array="False" size=""/>
+            <assign variable="jumlah" expression="0"/>
+            <assign variable="angka" expression="x"/>
+            <for variable="i" start="1" end="angka" direction="inc" step="1">
+                <if expression="angka % i = 0">
+                    <then>
+                        <assign variable="jumlah" expression="jumlah + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="jumlah = 2">
+                <then>
+                    <assign variable="d" expression="&quot;adalah bilangan prima&quot;"/>
+                </then>
+                <else>
+                    <assign variable="d" expression="&quot;adalah bukan bilangan prima&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
